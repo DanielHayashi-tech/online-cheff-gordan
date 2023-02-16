@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <%- include('../partials/head'); %>
+</head>
+<body class="container">
+
+<header>
+    <%- include('../partials/header'); %>
+</header>  
+
+<main>
+<br>
+<h1 style="text-align:center"> Our Top 3 protien bars from last Week:</h1>
+<br>
+
+
+<div class="container">
+    <div class="row">
+        <div class="col-lg">
+            <div class="jumbotron">
+                <ul class="list-group float-right">
+                    <li class="list-group-item">Calories: 280 Cal</li>
+                    <li class="list-group-item">Protien: 22G</li>
+                    <li class="list-group-item">Carbs: 25G</li>
+                    <li class="list-group-item">Fats: 11G</li>
+                </ul>
+                <h4>Smores</h4>
+                <img src="/images/coco.png" alt="yeet" height="180" width="300">
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-lg">
+            <div class="jumbotron">
+                <ul class="list-group float-right">
+                    <li class="list-group-item">Calories: 280 Cal</li>
+                    <li class="list-group-item">Protien: 21G</li>
+                    <li class="list-group-item">Carbs: 25G</li>
+                    <li class="list-group-item">Fats: 11G</li>
+                </ul>
+                <h4>Pb & J</h4>
+                <img src="/images/pbj.png" alt="yeet" height="180" width="300">
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-lg">
+            <div class="jumbotron">
+                <ul class="list-group float-right">
+                    <li class="list-group-item">Calories: 255 Cal</li>
+                    <li class="list-group-item">Protien: 20G</li>
+                    <li class="list-group-item">Carbs: 21G</li>
+                    <li class="list-group-item">Fats: 11G</li>
+                </ul>
+                <h4>Fruity Pebbles</h4>
+                <img src="/images/pebbles.png" alt="yeet" height="180" width="300">
+            </div>
+        </div>
+    </div>
+</div>
+</main>
+<h3 class="text-center"> If you would like to purchase some of our selcted offers, <br>
+    please leave your information below:</h3>
+<form>
+    <div class="form-group col-lg-8">
+        <label for="InputFname">First Name: </label>
+        <input type="Fname" class="form-control" id="Fname" placeholder="First Name">
+    </div>
+    <div class="form-group col-lg-8">
+        <label for="InputLname">Last Name: </label>
+        <input type="Lname" class="form-control" id="Lname" placeholder="Last Name">
+    </div>
+    <div class="form-group col-lg-8">
+        <label for="cardinfo">Card Number:  </label>
+        <input type="card" class="form-control" id="card" placeholder="Please enter your 16 digit credit card number">
+    </div>
+    <div class="form-group col-lg-4">
+        <label for="cardexpo">Experation Date:  </label>
+        <input type="expo" class="form-control" id="expo" placeholder="Credit card experation date">
+    </div>
+    <div class="form-group col-sm-4">
+        <label for="SSN">SSN:  </label>
+        <input type="SSN" class="form-control" id="SSN" placeholder="Please enter the 3 digit SSN number">
+    </div>
+    <div class="form-group col-md-4">
+        <label for="Select1">Choose your Protien Bar</label>
+        <select class="form-control" id="Select1">
+            <option>Smores</option>
+            <option>Pb & J</option>
+            <option>Fruity Pebbles</option>
+        </select>
+    </div>
+</form>
+
+<button type="button" class="btn btn-primary">Submit</button>
+
+<footer>
+    <%- include('../partials/footer'); %>
+</footer>
+
+</body>
+</html>

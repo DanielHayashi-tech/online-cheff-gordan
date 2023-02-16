@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <%- include('../partials/head'); %>
+    <style>
+        body{margin-top:20px;}
+
+    .comment-wrapper .panel-body {
+        max-height:650px;
+        overflow:auto;
+    }
+
+    .comment-wrapper .media-list .media img {
+        width:64px;
+        height:64px;
+        border:2px solid #e5e7e8;
+    }
+
+    .comment-wrapper .media-list .media {
+        border-bottom:1px dashed #efefef;
+        margin-bottom:25px;
+    }
+    </style>
+</head>
+<body class="container">
+
+<header>
+    <%- include('../partials/header'); %>
+</header>  
+
+
+
+<main>
+<div class="container">
+    <div class="jumbotron text-center">
+        <h2>Welcome to what we like to call the Zen Space</h2>
+        <p> Here you can see what all of our past consumers have felt about our product <br> 
+            Dont be shy leave a comment, we wanna be able to be as transparent as possible!</p>
+    </div>
+</div>
+</main>
+<div class="container">
+    <h4 class="text-center"> Enter your first and last name as well as your order ID # and let us know how we did! </h4>
+    <br>
+    <form>
+        <div class="form-group col-lg-8">
+            <label for="InputFname">First Name: </label>
+            <input type="Fname" class="form-control" id="Fname" placeholder="First Name">
+        </div>
+        <div class="form-group col-lg-8">
+            <label for="InputLname">Last Name: </label>
+            <input type="Lname" class="form-control" id="Lname" placeholder="Last Name">
+        </div>
+        <div class="form-group col-lg-4">
+            <label for="order">Order ID#:  </label>
+            <input type="order" class="form-control" id="order" placeholder="Order number">
+        </div>
+        <div class="panel panel-info">
+            <div class="panel-heading">
+                Comment panel
+            </div>
+            <div class="panel-body">
+                <textarea class="form-control" placeholder="write a comment..." rows="3"></textarea>
+                <br>
+                <button type="button" class="btn btn-primary">Post</button>
+            </div>
+        </div>
+    </form>
+</div>
+<br>
+<h2> Comments:</h2>
+<div class="container jumbotron">
+    <div class="card" style="width: 50rem;">
+        <img src="/images/yellow.png" alt="Card image cap" height="100" width="100">
+        <div class="card-body">
+          <h5 class="card-title">User 0874212223</h5>
+          <p class="card-text">The Smore's protien bar is my favorite!</p>
+        </div>
+    <br>
+    <div class="card" style="width: 50rem;">
+        <img src="/images/stitch.png" alt="Card image cap" height="100" width="100">
+        <div class="card-body">
+          <h5 class="card-title">User 23564576457</h5>
+          <p class="card-text"> I can't believe how fast they shipped my items! </p>
+        </div>
+    </div>
+    <br>
+    <div class="card" style="width: 50rem;">
+        <img src="/images/shannon.png" alt="Card image cap" height="100" width="100">
+        <div class="card-body">
+          <h5 class="card-title">User 09787643434</h5>
+          <p class="card-text"> I think they are a bit over priced but I will say, I have never had a bad experience with this website.</p>
+        </div>
+    <br>
+    <div class="card" style="width: 50rem;">
+        <img src="/images/mulan.png" alt="Card image cap" height="100" width="100">
+        <div class="card-body">
+          <h5 class="card-title">User 21650235</h5>
+          <p class="card-text">Has anybody ever tried Fruity Pebbles? I wanna get it but I'm scared I won't like it....</p>
+        </div>
+    <br>
+    <div class="card" style="width: 50rem;">
+        <img src="/images/princess-frog.png" alt="Card image cap" height="100" width="100">
+        <div class="card-body">
+          <h5 class="card-title">User 2376743563</h5>
+          <p class="card-text"> HANDS DOWN BEST CUSTOMER SERVICE EVER!!!! 
+              I spoke with Daniel and he was such a sweet guy, he helped me out tracking a lost package. I will definitely be back to buy more!
+          </p>
+        </div>
+</div>
+
+<footer>
+    <%- include('../partials/footer'); %>
+</footer>
+
+</body>
+</html>
